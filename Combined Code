@@ -1,0 +1,61 @@
+int LED1 = 3;
+int LED2 = 5;
+int LED3 = 6;
+int flicker1[3][13] = {{10, 30, 5, 50, 20, 80, 30, 150, 60, 200, 180, 45, 90},
+                        {180, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90},
+                        {10, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90}};
+int flicker2[3][13] = {{10, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90},
+                         {10, 30, 5, 50, 20, 80, 30, 150, 60, 200, 180, 45, 90},
+                         {180, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90}};
+int flicker3[3][13] = {{180, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90},
+                        {10, 30, 89, 23, 255, 200, 90, 150, 60, 230, 180, 45, 90},
+                          {10, 30, 5, 50, 20, 80, 30, 150, 60, 200, 180, 45, 90}};
+
+int brightness = 0;
+int fadeAmount = 50;
+int brightness2 = 0;
+int fadeAmount2 = 20;
+int brightness3 = 0;
+int fadeAmount3 = 30;
+
+void setup()
+{
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+}
+
+void loop()
+{
+  //Led 1
+//  for(int i=0; i,7; i++)
+//  {
+//    analogWrite(LED1, flicker1[1][i]);
+//    analogWrite(LED2, flicker2[1][i]);
+//    analogWrite(LED3, flicker3[1][i]);
+//    delay(100);
+//  }
+
+  analogWrite(LED1, fadeAmount);
+  analogWrite(LED2, fadeAmount);
+  analogWrite(LED3, fadeAmount);
+//
+//  analogWrite(LED1, brightness);
+//  brightness = brightness + fadeAmount;
+//  if (brightness <=0 || brightness >= 225) {
+//  fadeAmount = -fadeAmount;
+//  }
+//  analogWrite(LED2, brightness2);
+//  brightness2 = brightness2 + fadeAmount2;
+//  if (brightness2 <=0 || brightness2 >= 225) {
+//  fadeAmount2 = -fadeAmount2;
+//  }
+//
+//  analogWrite(LED3, brightness3);
+//  brightness3 = brightness3 + fadeAmount3;
+//  if (brightness3 <=0 || brightness3 >= 225) {
+//  fadeAmount3 = -fadeAmount3;
+//}
+//  delay(20);
+   
+}
