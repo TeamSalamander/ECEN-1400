@@ -1,0 +1,22 @@
+int led = 9;
+int led2 = 10;
+int led3 = 11;
+int brightness = 0;
+int fadeAmount = 50;
+int brightness2 = 0;
+int fadeAmount2 = 50;
+int brightness3 = 0;
+int fadeAmount3 = 50;
+void setup() {
+  // put your setup code here, to run once:
+analogWrite(led, OUTPUT);
+analogWrite(led2, OUTPUT);
+analogWrite(led3, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+analogWrite(led, fadeAmount);
+analogWrite(led2, fadeAmount);
+analogWrite(led3, fadeAmount);
+}
